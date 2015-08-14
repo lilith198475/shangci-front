@@ -493,7 +493,7 @@ body.content-page{
 		}
 .thumbnail + h5, .thumbnail + h5 + p{ text-align:center;}
 		
-.item-content{
+.item-content,item-content-title{
 	padding:0px 20px;
 
 	}	
@@ -594,10 +594,14 @@ body.content-page{
 	  }
 	  
 	  #collapseExample{display: none; }	  
-	    .modal-dialog {
+	  .modal-dialog {
 			width:inherit;
 			max-width:1200px;
-			}
+		}
+		
+	   .item-content{
+		   margin-bottom: 40px;   
+	   }
 			
 
 	  
