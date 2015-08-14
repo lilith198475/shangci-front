@@ -12,6 +12,7 @@ a{
 	text-decoration:none;
 	-webkit-transition:color 0.1s linear;
 	transition:color 0.1s linear;
+	
 }
 
 a:hover,a:focus,a:active{
@@ -370,6 +371,44 @@ body.content-page{
 }
 
 
+
+/* singlie item page slider */
+
+.demo .item{
+            margin-bottom: 30px;
+        }
+		.content-slider li{
+		    background-color: #ed3020;
+		    text-align: center;
+		    color: #FFF;
+		}
+		.content-slider h3 {
+		    margin: 0;
+		    padding: 70px 0;
+		}
+		.demo{
+			width: 100%;
+		}
+		
+		.demo img{
+			width:100%;
+			height:auto;
+			
+		}
+		.demo p{
+			color:#b1b1a8;	
+		}
+ 		modal-dialog {
+			max-width:1200px;
+			
+		}
+		.close{
+			font-size: 5rem;
+		
+		}
+
+
+
 /* content block of single item */
 .item-title h1, .item-title h2, .item-title h3, .item-title h4, .item-title h5{
 	margin-top:0px;	
@@ -377,17 +416,59 @@ body.content-page{
 	
 .item-title h1{
 	font-size:5.063rem;
-	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
 	color:#b1b1a8;	
-}
-
-.item-title h1{
 	border-right: 1px solid #b1b1a8;	
 }
+
+.item-content a{
+	color:	#a47f1a;
+	text-decoration:underline;
+}
+
+.item-content a:hover,.item-content a:focus,.item-content a:active{
+	text-decoration:underline;
+	color:inherit;
 	
+}
+.item-content .social{
+	text-align:left;
+	padding-left:0px;	
+}
+
+.item-content .social a{
+	color:inherit;
+	
+	
+}
+.item-content .social a:hover{
+	color:	#a47f1a;
+}
+
+.item-content span{
+	font-size:1.6rem;
+	font-weight:bold;
+	line-height:4rem;
+	padding-right:20px;
+	background:#f3f3f4;
+}
 
 
+.item-content h5:after{
+	content:"";
+	display:block;
+	position:relative;
+	top:-20px;
+	width:100%;
+	border-top:1px solid #b1b1a8;
+	z-index: -1;
+}
 
+ .item-function{
+		  padding-left:20px;
+	  }
+	  
+	  
+	  
 
 @media (max-width: 1200px){
 	
@@ -410,10 +491,19 @@ body.content-page{
 			padding-bottom:15%;
 			padding-top:15%;	
 		}
-				
-		.thumbnail + h5, .thumbnail + h5 + p{ text-align:center;}
+.thumbnail + h5, .thumbnail + h5 + p{ text-align:center;}
 		
+.item-content{
+	padding:0px 20px;
+
+	}	
 	
+.item-title h1{
+	font-size:5.063rem;
+	color:#b1b1a8;	
+	border-right: none;
+	text-align:center;	
+}	
 		
 }
 
@@ -504,4 +594,12 @@ body.content-page{
 	  }
 	  
 	  #collapseExample{display: none; }	  
+	    .modal-dialog {
+			width:inherit;
+			max-width:1200px;
+			}
+			
+
+	  
+	 
 }
