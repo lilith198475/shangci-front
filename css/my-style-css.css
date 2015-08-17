@@ -467,6 +467,16 @@ body.content-page{
 		  padding-left:20px;
 	  }
 	  
+.description:first-letter{
+	font-size:200%;
+	
+}
+
+.in-category-title h1{
+	font-size:5.063rem;
+	color:inherit;		
+	
+}
 	  
 	  
 
@@ -504,6 +514,13 @@ body.content-page{
 	border-right: none;
 	text-align:center;	
 }	
+
+
+.in-category-title h1{
+    font-size:5.063rem;
+	text-align:center;
+	
+}
 		
 }
 
@@ -600,7 +617,7 @@ body.content-page{
 		}
 		
 	   .item-content{
-		   margin-bottom: 40px;   
+		   margin-bottom: 30px;   
 	   }
 			
 

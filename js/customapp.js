@@ -19,8 +19,16 @@
 		
 		
 		$('.lightimg').click(function(){
-	var src = $(this).attr("src");
-	console.log(src);
-	$('.modal-body img').attr("src",src);
-  	$('#myModal').modal({show:true});
-});
+			var src = $(this).attr("src");
+			console.log(src);
+			$('.modal-body img').attr("src",src);
+			$('#myModal').modal({show:true});
+		});
+		
+		$('.magimg').click(function(){
+			
+			$(this).magnify();
+		});
+		
+		
+		
