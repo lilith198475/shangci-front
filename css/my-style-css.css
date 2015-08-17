@@ -472,11 +472,24 @@ body.content-page{
 	
 }
 
+
+/* sub category page layout */
+
 .in-category-title h1{
 	font-size:5.063rem;
 	color:inherit;		
 	
 }
+
+section.filter .filter-form{
+	margin-top: 1em;
+	background:#7e7f79;
+	border-top:1px solid #c6c7b7;
+	border-bottom:1px solid #c6c7b7;
+	
+}
+
+
 	  
 	  
 
