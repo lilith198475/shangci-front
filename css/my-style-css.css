@@ -410,7 +410,7 @@ body.content-page{
 
 
 /* content block of single item */
-.item-title h1, .item-title h2, .item-title h3, .item-title h4, .item-title h5{
+.item-title h1, .item-title h2, .item-title h3, .item-title h4, .item-title h5, .in-category-title h1, .in-category-title h2, .in-category-title h3, .in-category-title h4{
 	margin-top:0px;	
 	}
 	
