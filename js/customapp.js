@@ -15,8 +15,19 @@
                     $('#image-gallery').removeClass('cS-hidden');
                 }  
             });
+			
+			$('#ms').change(function() {
+				console.log($(this).val());
+			}).multipleSelect({
+				width: '100%'
+			});
+			
+			$('#ms2').change(function() {
+				console.log($(this).val());
+			}).multipleSelect({
+				width: '100%'
+			});
 		});
-		
 		
 		$('.lightimg').click(function(){
 			var src = $(this).attr("src");
@@ -29,6 +40,7 @@
 			
 			$(this).magnify();
 		});
+
 		
 		
 		
