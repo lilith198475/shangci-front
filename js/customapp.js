@@ -27,6 +27,18 @@
 			}).multipleSelect({
 				width: '100%'
 			});
+			
+			$('#ms3').change(function() {
+				console.log($(this).val());
+			}).multipleSelect({
+				width: '100%'
+			});
+			
+			$('#ms4').change(function() {
+				console.log($(this).val());
+			}).multipleSelect({
+				width: '100%'
+			});
 		});
 		
 		$('.lightimg').click(function(){
@@ -40,6 +52,39 @@
 			
 			$(this).magnify();
 		});
+		
+		$('.open-more-filter').click(function()
+		{ 
+			$(this).text(function(i,old){
+				return old=='+' ?  '-' : '+';
+			});
+		});
+			
+		$('.more-filter').click(function(event){
+					event.preventDefault();
+		});
+		
+		$('.glyph-switch').click(function(event){
+					event.preventDefault();
+					var $glphy = $(this).children("i");
+					$glphy.toggleClass(function(){
+						if ($(this).hasClass("glyphicon-triangle-top")){
+							$(this).removeClass("glyphicon-triangle-top");
+							return "glyphicon-triangle-bottom";
+						}else{
+							console.log("no");
+							$(this).removeClass("glyphicon-triangle-bottom");
+							return "glyphicon-triangle-top";
+							
+						}
+						
+					});
+					
+		
+					
+		});
+ 
+
 
 		
 		
