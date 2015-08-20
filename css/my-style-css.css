@@ -590,9 +590,9 @@ border-bottom:1px solid #ccc;
 }
 
  .carousel-control {
-  padding-top:8%;
-  width:5%;
-  font-size:80px;
+  padding-top:6%;
+  width:4%;
+  font-size:60px;
 }
 
 	  
@@ -641,9 +641,9 @@ border-bottom:1px solid #ccc;
 }
 
  .carousel-control {
-  padding-top:4%;
+  padding-top:3%;
 
-  font-size:80px;
+  font-size:60px
 }
 		
 }
