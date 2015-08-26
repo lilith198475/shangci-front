@@ -821,6 +821,18 @@ border-bottom:1px solid #ccc;
 	   .item-content{
 		   margin-bottom: 30px;   
 	   }
+    
+.carousel-control .glyphicon-chevron-left{
+   margin-left: -8px;
+
+}
+    
+  .carousel-control .glyphicon-chevron-right{
+   margin-right: -8px;
+
+}
+    
+    
 			
  .cd-top {
     height: 60px;
