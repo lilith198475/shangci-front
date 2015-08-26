@@ -641,6 +641,20 @@ border-bottom:1px solid #ccc;
   background-color: #e86256;
   opacity: 1;
 }	  
+
+
+/* Pagnation */
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus{
+	color:#f6f4ec;
+	background-color:#a47f1a;
+	border-color:#a47f1a;
+	
+}
+
+.pagination>li>a, .pagination>li>span{
+	color:#201f1e;
+	
+}
 	  
 	  
 
@@ -697,6 +711,7 @@ border-bottom:1px solid #ccc;
     right: 20px;
     bottom: 20px;
   }
+  
 		
 }
 
