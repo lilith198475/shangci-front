@@ -24,7 +24,7 @@
 <body class="content-page">
 <header>
  	<!--<div class="navbar navbar-default navbar-fixed-top">-->
-      <div class="navbar navbar-default">
+     <div class="navbar navbar-default">
  		<div class="container">
     	 	<div class="collapse" id="collapseExample">
             	<div>
@@ -49,51 +49,58 @@
             	<i class="glyphicon glyphicon-search" aria-hidden="true"></i><span style="font-size:0.6em; margin-left:5px;">快速检索</span>
            </a>
            
-           <nav class="nav navbar-default navbar-offcanvas offcanvas" id="myNavmenu">
-                <ul class="nav navbar-nav navbar-right">       
-                    <li class="active"><a href="#">最新资讯</a></li>
-                    <li class="dropdown">
-                    <a data-toggle="dropdown" data-target="#">分类检索<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="category-crafts.html">工艺分类</a></li>
-                      <li><a href="category-age.html">年代分类</a></li>
-                      <li><a href="category-Kilns.html">窑口分类</a></li>
-                      <li><a href="category-shape.html">器型分类</a></li>
-                      <li><a href="category-glaze.html">釉色分类</a></li>
-                      <li><a href="category-people.html">名家名瓷</a></li>
-                      
-                    </ul>
-                    </li>
-                    <li><a href="#">专家介绍</a></li>
-                    <li>
-                            <form class="navbar-form">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+           <nav class="nav navbar-default navbar-offcanvas offcanvas" id="myNavmenu" role="navigation">
+           		 <div class="container-fluid" id="navfluid">
+                    <ul class="nav navbar-nav navbar-right">       
+                        <li><a href="#">最新资讯</a></li>                    
+                        <li role="presentation" class="dropdown active">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">分类检索 <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                            	<li ><a href="category-crafts.html">工艺分类</a></li>
+                                  <li><a href="category-age.html">年代分类</a></li>
+                                  <li><a href="category-Kilns.html">窑口分类</a></li>
+                                  <li  class="active"><a href="category-shape.html">器型分类</a></li>
+                                  <li><a href="category-glaze.html">釉色分类</a></li>
+                                  <li><a href="category-people.html">名家名瓷</a></li>
+                              
+                            </ul>
+ 						 </li>        
+                        <li><a href="#">专家介绍</a></li>
+                        <li>
+                                <form class="navbar-form">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                        </div>
                                     </div>
-                                </div>
-        					</form>
-                    </li>
-                    <div class="clearfix hidden-xs" style="border-bottom:1px solid #f6f4ec;"></div>
-                    <li><a href="archive.html">精品欣赏</a></li>
-                    <li><a href="pros.html">合作的专家</a></li>
-                    <li><a href="#">会员登录</a></li>
-                    <li class="dropdown">
-                    <a data-toggle="dropdown" data-target="#">语言选择<b class="caret"></b></a>
-                    <ul class="dropdown-menu">	
-                      <li><a href="#">简体中文</a></li>
-                      <li><a href="trad/index.html">繁体中文</a></li>
-                      <li class="divider"></li>
-                      <li><a href="eng/index.html">English</a></li>
-                    </ul>
-                    </li>
-                    <li><a href="aboutus.html">关于赏瓷</a></li>
-                 </ul>
-        	</nav>           
+                                </form>
+                        </li>
+                        <div class="clearfix hidden-xs" style="border-bottom:1px solid #f6f4ec;"></div>
+                        <li ><a href="archive.html">精品欣赏</a></li>
+                        <li><a href="pros.html">合作的专家</a></li>
+                        <li><a href="#">会员登录</a></li>
+ 
+                        <li role="presentation" class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">语言选择 <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                            	<li><a href="#">简体中文</a></li>
+                                  <li><a href="trad/index.html">繁体中文</a></li>
+                                  <li class="divider"></li>
+                                  <li><a href="eng/index.html">English</a></li>
+                              
+                            </ul>
+ 						 </li>
+                        <li><a href="aboutus.html">关于赏瓷</a></li>
+                     </ul>
+                 </div>
+        	</nav>  
+                     
  	   </div>
     </div>
-</header>    
+</header>   
   
 <!-- main content -->   
 
@@ -607,6 +614,7 @@
    		</div>
    </div>
 </footer>
+<a href="#0" class="cd-top">Top</a>     
  <!--[if lte IE 9]>       
             <script src="js/ie-bootstrap-carousel.min.js"></script>
         <![endif]-->

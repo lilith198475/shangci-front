@@ -27,10 +27,10 @@
 <body class="content-page">
 <header>
  	<!--<div class="navbar navbar-default navbar-fixed-top">-->
-    <div class="navbar navbar-default">
+     <div class="navbar navbar-default">
  		<div class="container">
     	 	<div class="collapse" id="collapseExample">
-            	<div>	
+            	<div>
                 	<form class="navbar-form">
                     	<div class="input-group">
                         	<input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term2">
@@ -52,52 +52,60 @@
             	<i class="glyphicon glyphicon-search" aria-hidden="true"></i><span style="font-size:0.6em; margin-left:5px;">快速检索</span>
            </a>
            
-           <nav class="nav navbar-default navbar-offcanvas offcanvas" id="myNavmenu">
-                <ul class="nav navbar-nav navbar-right">       
-                    <li ><a href="#">最新资讯</a></li>
-                    <li class="dropdown">
-                    <a data-toggle="dropdown" data-target="#">分类检索<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="category.html">工艺分类</a></li>
-                      <li><a href="category.html">年代分类</a></li>
-                      <li><a href="category.html">窑口分类</a></li>
-                      <li><a href="category.html">器型分类</a></li>
-                      <li><a href="category.html">釉色分类</a></li>
-                      <li><a href="category.html">名家名瓷</a></li>
-                      
-                    </ul>
-                    </li>
-                    <li><a href="#">专家介绍</a></li>
-                    <li>
-                            <form class="navbar-form">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+           <nav class="nav navbar-default navbar-offcanvas offcanvas" id="myNavmenu" role="navigation">
+           		 <div class="container-fluid" id="navfluid">
+                    <ul class="nav navbar-nav navbar-right">       
+                        <li><a href="#">最新资讯</a></li>                    
+                        <li role="presentation" class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">分类检索 <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                            	<li><a href="category-crafts.html">工艺分类</a></li>
+                                  <li><a href="category-age.html">年代分类</a></li>
+                                  <li><a href="category-Kilns.html">窑口分类</a></li>
+                                  <li><a href="category-shape.html">器型分类</a></li>
+                                  <li><a href="category-glaze.html">釉色分类</a></li>
+                                  <li><a href="category-people.html">名家名瓷</a></li>
+                              
+                            </ul>
+ 						 </li>  
+                        
+                        <li><a href="#">专家介绍</a></li>
+                        <li>
+                                <form class="navbar-form">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                        </div>
                                     </div>
-                                </div>
-        					</form>
-                    </li>
-                    <div class="clearfix hidden-xs" style="border-bottom:1px solid #f6f4ec;"></div>
-                    <li class="active"><a href="#">精品欣赏</a></li>
-                    <li><a href="#">联系专家</a></li>
-                    <li><a href="#">会员登录</a></li>
-                    <li class="dropdown">
-                    <a data-toggle="dropdown" data-target="#">语言选择<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">简体中文</a></li>
-                      <li><a href="#">繁体中文</a></li>
-                      <li><a href="#">English</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#">Plans &amp; Pricing</a></li>
-                    </ul>
-                    </li>
-                    <li><a href="#">关于赏瓷</a></li>
-                 </ul>
-        	</nav>           
+                                </form>
+                        </li>
+                        <div class="clearfix hidden-xs" style="border-bottom:1px solid #f6f4ec;"></div>
+                        <li class="active"><a href="archive.html">精品欣赏</a></li>
+                        <li><a href="pros.html">合作的专家</a></li>
+                        <li><a href="#">会员登录</a></li>
+ 
+                        <li role="presentation" class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">语言选择 <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                            	<li><a href="#">简体中文</a></li>
+                                  <li><a href="trad/index.html">繁体中文</a></li>
+                                  <li class="divider"></li>
+                                  <li><a href="eng/index.html">English</a></li>
+                              
+                            </ul>
+ 						 </li>
+                        
+                        <li><a href="aboutus.html">关于赏瓷</a></li>
+                     </ul>
+                 </div>
+        	</nav>  
+                     
  	   </div>
     </div>
-</header>    
+</header>     
   
 <!-- main content -->   
 
@@ -126,17 +134,17 @@
                             <div class="clearfix">
                             	 <p><span class="glyphicon glyphicon-zoom-in"></span> <a href="#">按图放大</a></p>
                                 <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
-                                    <li data-thumb="img/item-slider-image/1.jpg"> 
-                                        <a href="#" title="Image 2"><img  src="img/item-slider-image/1.jpg" class="img-responsive magimg"/></a>
+                                    <li data-thumb="img/single-item/101/101-1.jpg"> 
+                                        <a href="#" title="Image 2"><img  src="img/single-item/101/101-1.jpg" class="img-responsive magimg"/></a>
                                          </li>
-                                    <li data-thumb="img/item-slider-image/2.jpg"> 
-                                        <a href="#" title="Image 2"><img  src="img/item-slider-image/2.jpg" class="img-responsive magimg" /></a>
+                                    <li data-thumb="img/single-item/101/101-2.jpg"> 
+                                        <a href="#" title="Image 2"><img  src="img/single-item/101/101-2.jpg" class="img-responsive magimg" /></a>
                                          </li>
-                                         <li data-thumb="img/item-slider-image/3.jpg"> 
-                                        <a href="#" title="Image 2"><img  src="img/item-slider-image/3.jpg" class="img-responsive magimg"/></a>
+                                         <li data-thumb="img/single-item/101/101-3.jpg"> 
+                                        <a href="#" title="Image 2"><img  src="img/single-item/101/101-3.jpg" class="img-responsive magimg"/></a>
                                          </li>
-                                    <li data-thumb="img/item-slider-image/4.jpg"> 
-                                        <a href="#" title="Image 2"><img  src="img/item-slider-image/4.jpg" class="img-responsive magimg" /></a>
+                                    <li data-thumb="img/single-item/101/101-4.jpg"> 
+                                        <a href="#" title="Image 2"><img  src="img/single-item/101/101-4.jpg" class="img-responsive magimg" /></a>
                                          </li>
                                   
                                   
@@ -264,40 +272,42 @@ Gertrude and Otto Harriman（1948 -1970年）收藏，1948年8月30日以65英�
                
                 
                 <hr>
-                <div class="row">
+               <div class="row">
                 
-                            <h4><b><a href="#">最新精品</a></b></h4>
-                            <div class="col-md-2">
-                            <a href="#"><div class="thumbnail" ><figure class="tint"><img src="img/thumbnail/1.jpg"  alt="" class="img-responsive img-rounded" ></figure></div>
-                            <h5><b>青花将军罐</b></h5>
-                            <p>清-乾隆</p></a>
+                            <h4><b><a href="blog.html">最新精品</a></b></h4>
+                         <div class="col-md-2">
+                            <a href="single-item/901.html"><div class="thumbnail" ><figure class="tint"><img src="img/single-item/901/901-thumb.png" alt="" class="img-responsive img-rounded"  ></figure></div>
+                            <h5><b>仿官釉鳩耳尊 </b></h5>
+                            <p>清乾隆</p></a>
                         </div>
                         
                         <div class="col-md-2">
-                            <a href="#"><div class="thumbnail" ><figure class="tint"><img src="img/thumbnail/2.jpg" alt="" class="img-responsive img-rounded" ></figure></div>
-                            <h5><b>青花双系耳罐</b></h5>
-                            <p>元-正德</p></a>
+                            <a href="single-item/101.html"><div class="thumbnail" ><figure class="tint"><img src="img/single-item/101/101-thumb.png" alt="" class="img-responsive img-rounded" ></figure></div>
+                            <h5><b>青花雙龍趕珠紋缽</b></h5>
+                            <p>明宣德</p></a>
                         </div>
                         
                         <div class="col-md-2">
-                            <a href="#"><div class="thumbnail" ><figure class="tint"><img src="img/thumbnail/3.jpg" alt="" class="img-responsive img-rounded" ></figure></div>
-                            <h5><b>甜青釉观音瓶</b></h5>
-                            <p>宋</p></a>
-                        </div>
+                                            <a href="single-item/302.html"><div class="thumbnail" ><figure class="tint"><img src="img/single-item/302/302-thumb.png" alt="" class="img-responsive img-rounded" ></figure></div>
+                                            <h5><b>五彩牡丹獅子紋將軍罐一對</b></h5>
+                                            <p>清康熙</p></a>
+                      </div>
+                                        
+                                        
                         <div class="col-md-2">
-                            <a href="#"><div class="thumbnail" ><figure class="tint"><img src="img/thumbnail/4.jpg" alt="" class="img-responsive img-rounded" ></figure></div>
-                            <h5><b>粉彩棒槌瓶</b></h5>
-                            <p>清-光绪</p></a>
-                        </div>
-                        
-                        <div class="col-md-2">
-                            <a href="#" ><div class="thumbnail" ><figure class="tint"><img src="img/thumbnail/1.jpg" alt="" class="img-responsive img-rounded" ></figure></div>
-                            <h5><b>青花将军罐</b></h5>
-                            <p>清-乾隆</p></a>
+                            <a href="single-item/202.html"><div class="thumbnail" ><figure class="tint"><img src="img/single-item/202/202-thumb.png" alt="" class="img-responsive img-rounded"  ></figure></div>
+                            <h5><b>五彩花果紋缸</b></h5>
+                            <p>清康熙</p></a>
                         </div>
                         
                         <div class="col-md-2">
-                            <a href="#" class="link-more">
+                            <a href="single-item/301.html"><div class="thumbnail" ><figure class="tint"><img src="img/single-item/301/301-thumb.png" alt="" class="img-responsive img-rounded" ></figure></div>
+                            <h5><b>五彩牡丹紋將軍罐</b></h5>
+                            <p>清康熙</p></a>
+                        </div>
+
+                          <div class="col-md-2">
+                            <a href="blog.html" class="link-more">
                                 <div class="image-preview-container">
                                         <div class="round-button">
                                                 <span class="fa-stack fa-lg">
@@ -310,7 +320,8 @@ Gertrude and Otto Harriman（1948 -1970年）收藏，1948年8月30日以65英�
                                 </div>
                             </a>
                         </div>
-   				</div>        
+   				</div>      
+                
             </div>  
         </div>
       </div>
@@ -325,43 +336,43 @@ Gertrude and Otto Harriman（1948 -1970年）收藏，1948年8月30日以65英�
        	<div class="col-md-3 hidden-xs hidden-sm">
          <h5><b>关于赏瓷</b></h5>
           <ul>
-            <li><a href="#">赏瓷简介</a></li>
-            <li><a href="#">鉴定中心及办事处</a></li>
+            <li><a href="about-description.html">赏瓷简介</a></li>
+            <li><a href="center.html">鉴定中心及办事处</a></li>
           </ul>
         </div>
         <div class="col-md-3 hidden-xs col-sm-4">
         <h5><b>赏瓷周边服务</b></h5>
            <ul>
-            <li><a href="#">专业瓷器书籍</a></li>
-            <li><a href="#">瓷器鉴定</a></li>
-            <li><a href="#">专家交流</a></li>
-            <li><a href="#">学术讲座</a></li>
+            <li><a href="books.html">专业瓷器书籍</a></li>
+            <li><a href="identify.html">瓷器鉴定</a></li>
+            <li><a href="pros.html">合作的专家</a></li>
+            <li><a href="lecture.html">学术讲座</a></li>
           </ul>	
         </div>
         <div class="col-md-3 col-xs-6  col-sm-4">
             <h5><b>更多</b></h5>
                <ul>
-                <li><a href="#">联络我们</a></li>
-                <li><a href="#">网站索引</a></li>
-                <li><a href="#">隐私政策</a></li>
-                <li><a href="#">安全</a></li>
+                <li><a href="contact-us.html">联络我们</a></li>
+                <li><a href="sitemap.xml">网站索引</a></li>
+                <li><a href="privacy.html">隐私政策</a></li>
+                <li><a href="security.html">安全</a></li>
               </ul>	
         </div>
         <div class="col-md-3 col-xs-6 col-sm-4">
           
           <div class="row"> 
           <hr>
-           	<h4><a href="#">联系专家</a></h4>
+           	<h4><a href="contact-pro.html">联系专家</a></h4>
           </div>
           
           <div class="row"> 
           <hr>
-          	<h4><a href="#">预定鉴定</a></h4>
+          	<h4><a href="book-identify.html">预定鉴定</a></h4>
           </div>
          
           <div class="row">
            <hr>
-          	<h4><a href="#">订购《黄氏古瓷鉴定法》</a></h4>
+          	<h4><a href="apeipei.html">订购《黄氏古瓷鉴定法》</a></h4>
           </div>
           <div class="row">
           <hr>
@@ -419,6 +430,7 @@ Gertrude and Otto Harriman（1948 -1970年）收藏，1948年8月30日以65英�
    		</div>
    </div>
 </footer>
+<a href="#0" class="cd-top">Top</a> 
  <!--[if lte IE 9]>       
             <script src="js/ie-bootstrap-carousel.min.js"></script>
         <![endif]-->
