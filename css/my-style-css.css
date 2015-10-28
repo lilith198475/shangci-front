@@ -130,7 +130,9 @@ a>.thumbnail>img{
   right: 0;
   transition: all .3s linear;
 }
-
+p{
+	line-height:1.8;	
+}
 a:hover .tint:before{
 	background: rgba(0,0,0, 0.5); 
 }
@@ -714,6 +716,21 @@ border-bottom:1px solid #ccc;
 
 }
 
+/* Single-Report */
+
+.report img{
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	max-width:100%;
+	height:auto;
+	margin-bottom: 20px;
+}
+
+.report p{
+	font-size:1.3em;
+}
+
 
 	
 
@@ -747,6 +764,10 @@ border-bottom:1px solid #ccc;
 .report-order{
 	margin-top:60px;	
 }
+
+
+
+
 	  
 	  
 
